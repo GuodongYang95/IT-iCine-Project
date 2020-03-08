@@ -1,0 +1,8 @@
+# Rango specific git ignore
+.pyc
+.DS_Store
+__pycache__/
+db.sqlite3
+*.key
+thumbs.db
+
