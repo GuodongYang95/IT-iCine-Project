@@ -11,11 +11,11 @@ a {
 a:hover {
   transition-duration: 0.05s;
 }
-.window-margin {
+/*.window-margin {
   padding-left: 20px;
   padding-right: 20px;
   margin: auto;
-}
+}*/
 .window {
   margin: auto;
   border-radius: 5px;
@@ -40,7 +40,7 @@ a:hover {
   color: #DDD;
 }
 .window .sidebar .top-bar {
-  background: #3AB0FF;
+  background: #24282C;
   overflow: hidden;
 }
 .window .sidebar .top-bar .logo {
@@ -161,7 +161,7 @@ a:hover {
   position: relative;
 }
 .window .main .top-bar {
-  background: #279CEB;
+  background: #24282C;
 }
 .window .main .top-bar .top-menu {
   height: 65px;
@@ -174,7 +174,7 @@ a:hover {
   transition-duration: 0.3s;
 }
 .window .main .top-bar .top-menu .menu-icon:hover {
-  background: #54baff;
+  background: #24282C;
   transition-duration: 0.05s;
 }
 .window .main .top-bar .top-menu .menu-icon .line {
@@ -205,7 +205,7 @@ a:hover {
 }
 .window .main .top-bar .profile-box {
   float: right;
-  background: #3AB0FF;
+  background: #24282C;
   height: 65px;
   line-height: 65px;
   padding: 0 20px;

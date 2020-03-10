@@ -23,12 +23,14 @@
 </head>
 
 <body>
-<div class="window-margin">
+<!-- <div class="window-margin"> -->
 <div class="window">
 
 	<aside class="sidebar">			
 		<div class="top-bar">
-			<p class="logo"><i class="fa fa-video-camera"></i> iCine </p>
+			<a href="#">
+				<p class="logo"><i class="fa fa-star-o"></i> iCine </p>
+			</a>
 		</div>
 
 
@@ -38,7 +40,7 @@
 		</div>
 
 		<menu class="menu">
-			<p class="menu-name">Movie trailers</p>
+			<p class="menu-name">Movie Categories</p>
 			<ul>
 				<li class="active">
 					<a href="#">Action / Adventure</a>
@@ -46,7 +48,7 @@
 						<li><a href="#">Latest</a></li>
 						<li class="active"><a href="#">Popular</a></li>
 						<li><a href="#">Coming soon</a></li>
-						<li><a href="#">Staff picks</a></li>
+						<!-- <li><a href="#">Staff picks</a></li> -->
 					</ul>
 				</li>
 
@@ -61,10 +63,10 @@
 
 				<div class="separator"></div>
 				<ul class="no-bullets">
-					<li><a href="#">Latest news</a></li>
-					<li><a href="#">Critic reviews</a></li>
-					<li><a href="#">Box office</a></li>
-					<li><a href="#">Top 250</a></li>
+					<li><a href="#">In Theaters</a></li>
+					<li><a href="#">Top Rated Movies</a></li>
+					<li><a href="#">Most Popular Movies</a></li>
+					<li><a href="#">Top Box Office (UK)</a></li>
 				</ul>
 				<div class="separator"></div>
 		</menu>
@@ -77,23 +79,24 @@
 				<span class="arrow fa fa-angle-down"></span>
 			</div>
 
+
 			<ul class="top-menu">
-				<li class="menu-icon trigger-sidebar-toggle">
+				<li class="trigger-sidebar-toggle">
 					<a href="#"><i class="fa fa-bars"></i></a>
 				</li>
 
 				<li><a href="#">Home</a></li>
-				<li><a href="about.html">About</a></li>
-				<li><a href="#">Movies & Films</a></li>
-				<li><a href="#">Television</a></li>
-				<li><a href="#">Music</a></li>
-				<li><a href="#">Celebrities</a></li>
+				<li><a href="/icine/about.html">About</a></li>
+				<li><a href="#">Ranking List</a></li>
+				<li><a href="#">Cinecism</a></li>
+				<!-- <li><a href="#">Music</a></li>
+				<li><a href="#">Celebrities</a></li> -->
 			</ul>
 		</div>
 	</div>
 	{% block content %}{% endblock %}
 </div>
-</div> 
+<!-- </div>  -->
 <script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 
