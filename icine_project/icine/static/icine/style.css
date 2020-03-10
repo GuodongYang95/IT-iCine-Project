@@ -460,7 +460,7 @@ a:hover {
   margin-left: auto;
   margin-right: auto;
   -webkit-box-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .movie-card {
@@ -483,26 +483,75 @@ a:hover {
   border-top-right-radius: 10px;
 }
 
-.manOfSteel {
-  background: url("http://henrycavill.org/images/Films/2013-Man-of-Steel/posters/3-Walmart-Superman-a.jpg");
+.parasite {
+  background: url("https://m.media-amazon.com/images/M/MV5BNzZiNTIzMDgtZTJiMi00YWFkLTllZDUtYzBkM2E5ZDFjOThlXkEyXkFqcGdeQXVyNDQxOTAyNA@@._V1_.jpg");
   background-size: cover;
 }
 
-.babyDriver {
-  background: url("https://m.media-amazon.com/images/M/MV5BMjM3MjQ1MzkxNl5BMl5BanBnXkFtZTgwODk1ODgyMjI@._V1_SY1000_CR0,0,674,1000_AL_.jpg");
-  background-size: cover;
-}
-
-.theDarkTower {
-  background: url("http://cdn.collider.com/wp-content/uploads/2017/03/the-dark-tower-poster.jpg");
+.doLittle {
+  background: url("https://m.media-amazon.com/images/M/MV5BMGM1MDJkMmYtYmFhOS00MDg2LWI2ZTMtODI0ZDkwMGQ5MGVmXkEyXkFqcGdeQXVyNDQxOTAyNA@@._V1_.jpg");
   background-size: cover;
   background-position: 100% 100%;
 }
 
-.bladeRunner2049 {
-  background: url("http://cdn.collider.com/wp-content/uploads/2017/05/blade-runner-2049-poster-ryan-gosling.jpeg");
+.onWard {
+  background: url("https://m.media-amazon.com/images/M/MV5BODQ0NjM2MjQtNjkyMS00ZDNjLThlMWQtMGVlZTAxZmRlNjhkXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SY1000_CR0,0,675,1000_AL_.jpg");
   background-size: cover;
   background-position: 100% 80%;
+}
+
+.quietPlace2 {
+  background: url("https://m.media-amazon.com/images/M/MV5BZmMzMmMwMzEtZDNjYi00ZGI3LWE3MTEtM2E0OTcxZWJmMWMyXkEyXkFqcGdeQXVyMzY0MTE3NzU@._V1_SY1000_CR0,0,695,1000_AL_.jpg");
+  background-size: cover;
+  background-position: 100% 50%;
+}
+
+.skyFall1917 {
+  background: url("https://m.media-amazon.com/images/M/MV5BMzI5MGQ0Y2UtYmE3Yi00NGY3LTk4ZDctZDQyNTI5ZmUxNzRjXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SY1000_CR0,0,631,1000_AL_.jpg");
+  background-size: cover;
+  background-position: 100% 50%;
+}
+
+.fastFurious9 {
+  background: url("https://m.media-amazon.com/images/M/MV5BODUwMGE0OGMtNWI0ZS00ZGVhLTg4OTQtZDM5MTI4N2FhMzAzXkEyXkFqcGdeQXVyODc5MDgxNzE@._V1_SY1000_CR0,0,631,1000_AL_.jpg");
+  background-size: cover;
+  background-position: 100% 100%;
+}
+
+.blackWidow {
+  background: url("https://m.media-amazon.com/images/M/MV5BZGRlNTY3NGYtM2YzZS00N2YyLTg0ZDYtNmY2ZDg2NDM3N2JlXkEyXkFqcGdeQXVyNTI4MzE4MDU@._V1_SY1000_CR0,0,675,1000_AL_.jpg");
+  background-size: cover;
+  background-position: 100% 50%;
+}
+
+.mulan {
+  background: url("https://m.media-amazon.com/images/M/MV5BZGVlMDFhYzAtMmIyZS00ZTc4LWFmMTQtYjQ0YjkwMmU1ODNmXkEyXkFqcGdeQXVyOTQwNjAzMjM@._V1_SY1000_SX700_AL_.jpg");
+  background-size: cover;
+  background-position: 100% 50%;
+}
+
+.theInvisibleMan {
+  background: url("https://m.media-amazon.com/images/M/MV5BMDEyZmEyM2UtMWFkMi00NTI0LTlmZDQtMGUzNGIyNWM0MWFmXkEyXkFqcGdeQXVyNzU3Nzk4MDQ@._V1_.jpg");
+  background-size: cover;
+  background-position: 100% 50%;
+}
+
+.harleyQuinnBirdsOfPrey {
+  background: url("https://m.media-amazon.com/images/M/MV5BZjJmYmFmZGQtYWYzYS00N2UzLTkzYjktYmNkYzQ0MTJlN2M4XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SY1000_CR0,0,674,1000_AL_.jpg");
+  background-size: cover;
+  background-position: 100% 50%;
+}
+
+.fantasyIsland {
+  background: url("https://m.media-amazon.com/images/M/MV5BMjBkMThiMWYtMDA5Ni00Yjc3LWFhYzktN2Q1MmZhNzU5MDNlXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SY1000_SX800_AL_.jpg");
+  background-size: cover;
+  background-position: 100% 100%;
+}
+
+.darkWaters{
+  background: url("https://m.media-amazon.com/images/M/MV5BNjk5YmJmYWMtYTAwNi00NTdkLWI3MjYtMGNiNDg1ODk0NjY0XkEyXkFqcGdeQXVyMjMxMjM2NjM@._V1_SY1000_SX675_AL_.jpg");
+  background-size: cover;
+  background-position: 100% 50%;
 }
 
 .header-icon-container {
@@ -564,6 +613,29 @@ a:hover {
   margin-top: 5px;
 }
 
+.fourDx-logo {
+  width: 50px;
+  height: 15px;
+  background: url("https://www.unitedcinemas.jp/4dx/images/logo.png") no-repeat;
+  background-size: contain;
+  display: table-cell;
+  float: right;
+  position: relative;
+  margin-top: 5px;
+}
+
+
+.twoD-logo {
+  width: 50px;
+  height: 35px;
+  background: url("https://cdn4.iconfinder.com/data/icons/cinema-ticket-app/24/2D-512.png") no-repeat;
+  background-size: contain;
+  display: table-cell;
+  float: right;
+  position: relative;
+  margin-top: 5px;
+}
+
 .movie-info {
   margin-top: 1em;
 }
@@ -607,4 +679,3 @@ a:hover {
     margin: 0;
   }
 }
-
