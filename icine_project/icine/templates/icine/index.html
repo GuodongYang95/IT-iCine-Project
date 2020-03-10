@@ -1,155 +1,297 @@
 {% extends "icine/base.html" %}
 
-{% block style %}
- 	<style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-    </style>
-{% endblock %}
-
 {% block content %}
+	<div class="main" role="main">
+		<div class="featured-movie">
+			<img class="cover" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/22043/backdrop_ggwxvq_1.jpg" alt="" class="cover" />
+			<p class="corner-title">Staff pick</p>
+			<div class="bottom-bar">
+				<div class="title-container">
+					<span class="fa fa-play-circle"></span>
+					<b>Non-stop</b> Trailer #1
+				</div>
+				<div class="right">
+					<div class="stars">
+						<span class="fa fa-star"></span>
+						<span class="fa fa-star"></span>
+						<span class="fa fa-star"></span>
+						<span class="fa fa-star-half-o"></span>
+						<span class="fa fa-star-o"></span>
+					</div>
+					<div class="share">
+						<icon class="fa fa-share-square"></icon> Share
+					</div>
+				</div> 
+			</div> 
+		</div> 
 
-    <main role="main">
+		<!-- <div class="movie-list">
+			<div class="title-bar">
+				<div class="left">
+					<p class="bold">Popular Trailers</p>
+					<p class="grey">Action / Adventure</p>
+				</div> 
+				<div class="right">
+					<a class="blue" href="#">Rating <i class="fa fa-angle-down"></i></a>
+					<a href="#">Newest</a>
+					<a href="#">Oldest</a>
+				</div> 
+			</div> 
+			<ul class="list">
+				<li>
+					<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/22043/2014-03-08_140412_oavbye_1.png" alt="" class="cover" />
+					<p class="title">Sin City: A Dame To Kill For</p>
+					<p class="genre">Action, Crime</p>
+				</li>
 
-	  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-	    <ol class="carousel-indicators">
-	      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-	      <li data-target="#myCarousel" data-slide-to="1"></li>
-	      <li data-target="#myCarousel" data-slide-to="2"></li>
-	    </ol>
-	    <div class="carousel-inner">
-	      <div class="carousel-item active">
-	        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>
-	        <div class="container">
-	          <div class="carousel-caption text-left">
-	            <h1>Example headline.</h1>
-	            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-	            <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
-	          </div>
-	        </div>
-	      </div>
-	      <div class="carousel-item">
-	        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>
-	        <div class="container">
-	          <div class="carousel-caption">
-	            <h1>Another example headline.</h1>
-	            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-	            <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
-	          </div>
-	        </div>
-	      </div>
-	      <div class="carousel-item">
-	        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>
-	        <div class="container">
-	          <div class="carousel-caption text-right">
-	            <h1>One more for good measure.</h1>
-	            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-	            <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
-	          </div>
-	        </div>
-	      </div>
-	    </div>
-	    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-	      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-	      <span class="sr-only">Previous</span>
-	    </a>
-	    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-	      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-	      <span class="sr-only">Next</span>
-	    </a>
-	  </div>
+				<li>
+					<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/22043/2014-03-08_140329_aawn02_1.png" alt="" class="cover" />
+					<p class="title">Transcendence</p>
+					<p class="genre">Action, Drama</p>
+				</li>
+
+				<li>
+					<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/22043/2014-03-08_140239_kyg9i7_1.png" alt="" class="cover" />
+					<p class="title">Need For Speed</p>
+					<p class="genre">Action, Crime</p>
+				</li>
+
+				<li>
+					<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/22043/2014-03-08_140052_dq4dyx_1.png" alt="" class="cover" />
+					<p class="title">The Amazing Spiderman</p>
+					<p class="genre">Action, Adventure</p>
+				</li>
+
+				<li>
+					<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/22043/2014-03-08_140104_tdgzka_1.png" alt="" class="cover" />
+					<p class="title">Pompeii</p>
+					<p class="genre">Action, Adventure</p>
+				</li>
+
+				<li>
+					<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/22043/2014-03-08_140248_fmufrz_1.png" alt="" class="cover" />
+					<p class="title">Divergent</p>
+					<p class="genre">Action, Sci-Fi</p>
+				</li>
+
+				<li>
+					<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/22043/2014-03-08_140401_aewzsy_1.png" alt="" class="cover" />
+					<p class="title">Guardians of the Galaxy</p>
+					<p class="genre">Action, Adventure</p>
+				</li>
+
+				<li>
+					<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/22043/2014-03-08_140339_wck2gw_1.png" alt="" class="cover" />
+					<p class="title">X-Men: Days of Fury</p>
+					<p class="genre">Action, Adventure</p>
+				</li>
+
+				<li>
+					<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/22043/2014-03-08_140311_rj1det_1.png" alt="" class="cover" />
+					<p class="title">Captain America: The Winter Soilder</p>
+					<p class="genre">Action, Adventure</p>
+				</li>
+
+				<li>
+					<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/22043/2014-03-08_140248_fmufrz_1.png" alt="" class="cover" />
+					<p class="title">Divergent</p>
+					<p class="genre">Action, Sci-Fi</p>
+				</li>
+
+				<li>
+					<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/22043/2014-03-08_140132_bcnfqk_1.png" alt="" class="cover" />
+					<p class="title">RoboCop (2014)</p>
+					<p class="genre">Action, Crime</p>
+				</li>
+
+				<li>
+					<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/22043/2014-03-08_140329_aawn02_1.png" alt="" class="cover" />
+					<p class="title">Transcendence</p>
+					<p class="genre">Action, Drama</p>
+				</li>
+
+				<li>
+					<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/22043/2014-03-08_140239_kyg9i7_1.png" alt="" class="cover" />
+					<p class="title">Need For Speed</p>
+					<p class="genre">Action, Crime</p>
+				</li>
+
+				<li>
+					<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/22043/2014-03-08_140104_tdgzka_1.png" alt="" class="cover" />
+					<p class="title">Pompeii</p>
+					<p class="genre">Action, Adventure</p>
+				</li>
+
+				<li>
+					<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/22043/2014-03-08_140412_oavbye_1.png" alt="" class="cover" />
+					<p class="title">Sin City: A Dame To Kill For</p>
+					<p class="genre">Action, Crime</p>
+				</li>
+
+				<li>
+					<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/22043/2014-03-08_140339_wck2gw_1.png" alt="" class="cover" />
+					<p class="title">X-Men: Days of Fury</p>
+					<p class="genre">Action, Adventure</p>
+				</li>
+
+				<li>
+					<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/22043/2014-03-08_140052_dq4dyx_1.png" alt="" class="cover" />
+					<p class="title">The Amazing Spiderman</p>
+					<p class="genre">Action, Adventure</p>
+				</li>
+
+				<li>
+					<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/22043/2014-03-08_140248_fmufrz_1.png" alt="" class="cover" />
+					<p class="title">Divergent</p>
+					<p class="genre">Action, Sci-Fi</p>
+				</li>
+			</ul>
+			<a href="#" class="load-more">Show more movies <span class="fa fa-plus"></span></a>
+		</div>  -->
 
 
-	  <!-- Marketing messaging and featurettes
-	  ================================================== -->
-	  <!-- Wrap the rest of the page in another container to center all the content. -->
+		<div class="container">
+		<div class="movie-card">
+		<div class="movie-header manOfSteel">
+		<div class="header-icon-container">
+		<a href="#">
+		<i class="material-icons header-icon">&#xE037;</i>
+		</a>
+		</div>
+		</div>
+		<div class="movie-content">
+		<div class="movie-content-header">
+		<a href="#">
+		<h3 class="movie-title">Man of Steel</h3>
+		</a>
+		<div class="imax-logo"></div>
+		</div>
+		<div class="movie-info">
+		<div class="info-section">
+		<label>Date &amp; Time</label>
+		<span>Sun 8 Sept - 10:00PM</span>
+		</div>
+		<div class="info-section">
+		<label>Screen</label>
+		<span>03</span>
+		</div>
+		<div class="info-section">
+		<label>Row</label>
+		<span>F</span>
+		</div>
+		<div class="info-section">
+		<label>Seat</label>
+		<span>21,22</span>
+		</div>
+		</div>
+		</div>
+		</div>
+		<div class="movie-card">
+		<div class="movie-header babyDriver">
+		<div class="header-icon-container">
+		<a href="#">
+		<i class="material-icons header-icon">&#xE037;</i>
+		</a>
+		</div>
+		</div>
+		<div class="movie-content">
+		<div class="movie-content-header">
+		<a href="#">
+		<h3 class="movie-title">Baby Driver</h3>
+		</a>
+		<div class="imax-logo"></div>
+		</div>
+		<div class="movie-info">
+		<div class="info-section">
+		<label>Date &amp; Time</label>
+		<span>Tue 4 July - 05:00PM</span>
+		</div>
+		<div class="info-section">
+		<label>Screen</label>
+		<span>01</span>
+		</div>
+		<div class="info-section">
+		<label>Row</label>
+		<span>H</span>
+		</div>
+		<div class="info-section">
+		<label>Seat</label>
+		<span>15</span>
+		</div>
+		</div>
+		</div>
+		</div>
+		<div class="movie-card">
+		<div class="movie-header theDarkTower">
+		<div class="header-icon-container">
+		<a href="#">
+		<i class="material-icons header-icon">&#xE037;</i>
+		</a>
+		</div>
+		</div>
+		<div class="movie-content">
+		<div class="movie-content-header">
+		<a href="#">
+		<h3 class="movie-title">The Dark Tower</h3>
+		</a>
+		<div class="imax-logo"></div>
+		</div>
+		<div class="movie-info">
+		<div class="info-section">
+		<label>Date &amp; Time</label>
+		<span>Wed 16 Aug - 07:00PM</span>
+		</div>
+		<div class="info-section">
+		<label>Screen</label>
+		<span>06</span>
+		</div>
+		<div class="info-section">
+		<label>Row</label>
+		<span>C</span>
+		</div>
+		<div class="info-section">
+		<label>Seat</label>
+		<span>18</span>
+		</div>
+		</div>
+		</div>
+		</div>
+		<div class="movie-card">
+		<div class="movie-header bladeRunner2049">
+		<div class="header-icon-container">
+		<a href="#">
+		<i class="material-icons header-icon">&#xE037;</i>
+		</a>
+		</div>
+		</div>
+		<div class="movie-content">
+		<div class="movie-content-header">
+		<a href="#">
+		<h3 class="movie-title">Blade Runner 2049</h3>
+		</a>
+		<div class="imax-logo"></div>
+		</div>
+		<div class="movie-info">
+		<div class="info-section">
+		<label>Date &amp; Time</label>
+		<span>Mon 16 Oct - 10:00PM</span>
+		</div>
+		<div class="info-section">
+		<label>Screen</label>
+		<span>06</span>
+		</div>
+		<div class="info-section">
+		<label>Row</label>
+		<span>D</span>
+		</div>
+		<div class="info-section">
+		<label>Seat</label>
+		<span>05,06</span>
+		</div>
+		</div>
+		</div>
+		</div>
+		</div>
 
-	  <div class="container marketing">
-
-	    <!-- Three columns of text below the carousel -->
-	    <div class="row">
-	      <div class="col-lg-4">
-	        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-	        <h2>Heading</h2>
-	        <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-	        <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-	      </div><!-- /.col-lg-4 -->
-	      <div class="col-lg-4">
-	        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-	        <h2>Heading</h2>
-	        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-	        <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-	      </div><!-- /.col-lg-4 -->
-	      <div class="col-lg-4">
-	        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-	        <h2>Heading</h2>
-	        <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-	        <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-	      </div><!-- /.col-lg-4 -->
-	    </div><!-- /.row -->
-
-
-	    <!-- START THE FEATURETTES -->
-
-	    <hr class="featurette-divider">
-
-	    <div class="row featurette">
-	      <div class="col-md-7">
-	        <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your mind.</span></h2>
-	        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-	      </div>
-	      <div class="col-md-5">
-	        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
-	      </div>
-	    </div>
-
-	    <hr class="featurette-divider">
-
-	    <div class="row featurette">
-	      <div class="col-md-7 order-md-2">
-	        <h2 class="featurette-heading">Oh yeah, it’s that good. <span class="text-muted">See for yourself.</span></h2>
-	        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-	      </div>
-	      <div class="col-md-5 order-md-1">
-	        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
-	      </div>
-	    </div>
-
-	    <hr class="featurette-divider">
-
-	    <div class="row featurette">
-	      <div class="col-md-7">
-	        <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-	        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-	      </div>
-	      <div class="col-md-5">
-	        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
-	      </div>
-	    </div>
-
-	    <hr class="featurette-divider">
-
-	    <!-- /END THE FEATURETTES -->
-
-	  </div><!-- /.container -->
-
-
-	  <!-- FOOTER -->
-	  <footer class="container">
-	    <p class="float-right"><a href="#">Back to top</a></p>
-	    <p>&copy; 2017-2019 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-	  </footer>
-	</main>
-{% endblock content %}
+	</div>
+{% endblock %}

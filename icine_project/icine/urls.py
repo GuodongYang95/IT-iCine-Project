@@ -1,5 +1,8 @@
 from django.urls import path
 from icine import views
+from django.conf.urls import url
+
+app_name = 'icine'
 
 
 urlpatterns = [
