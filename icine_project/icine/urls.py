@@ -6,6 +6,7 @@ app_name = 'icine'
 
 
 urlpatterns = [
-	path('', views.index, name='icine-index'),
-	path('about/', views.about, name='icine-about'),
+	path('', views.IndexView.as_view(), name='icine-index'),
+	path('about/', views.AboutView.as_view(),name='icine-about'),
+	path('category/<slug:category_name_slug>/',views.ShowCategoryView.as_view(), name='show_category'),
 ]
