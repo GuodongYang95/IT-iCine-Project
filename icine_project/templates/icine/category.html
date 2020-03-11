@@ -17,12 +17,24 @@
     <div class="container">
         {% if category %}
         <h1 class="jumbotron-heading"> {{ category.name }} </h1>
+        <div>
+            <strong id="like_count">{{ category.likes }}</strong> likes 
+            {% if user.is_authenticated %}
+            <button id="like_btn"
+                    data-categoryid="{{ category.id }}" 
+                    class="btn btn-primary btn-sm" 
+                    type="button">
+                <span data-feather="thumbs-up"></span>
+                Like Category 
+            </button>
+            {% endif %} 
+        </div>
     </div>
 </div>
     {% if pages %}
         {% for page in pages %} 
             <li>
-                <a href="{% url 'rango:goto' %}?page_id={{ page.id }}">{{ page.title }}</a> 
+                <a href="{% url 'icine:goto' %}?page_id={{ page.id }}">{{ page.title }}</a> 
                 {% if page.views > 1 %}
                     ({{ page.views }} views) 
                 {% elif page.views == 1 %}
@@ -35,12 +47,12 @@
     {% endif %}
     
     {% if user.is_authenticated %}
-    <a href="{% url 'rango:add_page' category.slug %}">Add Page</a> <br />
+
     <div>
         <form class="form-inline" 
             id="user-form"
             method="post"
-            action="{% url 'rango:show_category' category.slug %}"> 
+            action="{% url 'icine:show_category' category.slug %}"> 
             {% csrf_token %}
         
             <div class="form-group">

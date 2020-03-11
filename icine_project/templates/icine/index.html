@@ -1,372 +1,80 @@
-{% extends "icine/base.html" %}
+<!DOCTYPE html>
+{% extends 'icine/base.html' %}
+{% load staticfiles %}
 
-{% block content %}
-	<div class="main" role="main">
-		<div class="featured-movie">
-			<a href="#">
-			<img class="cover" src="https://images2.alphacoders.com/106/thumb-1920-1068446.jpg" alt="" class="cover" />
-			<p class="corner-title">Recommended</p>
-			<div class="bottom-bar">
-				<div class="title-container">
-					<span class="fa fa-play-circle-o"></span>
-					<a href="#">
-					<b>Mulan</b> - Trailer #1
-				</div>
-				<div class="right">
-					<div class="stars">
-						<span class="fa fa-star"></span>
-						<span class="fa fa-star"></span>
-						<span class="fa fa-star"></span>
-						<span class="fa fa-star"></span>
-						<span class="fa fa-star-half-o"></span>
-					</div>
-					<div class="share">
-						<icon class="fa fa-share-square"></icon> Share
-					</div>
-				</div> 
-			</div> 
-		</div> 
-
-		<div class="container">
-
-			<div class="movie-card">
-			<div class="movie-header skyFall1917">
-			<div class="header-icon-container">
-			<a href="#">
-			<i class="material-icons header-icon">keyboard_arrow_down</i>
-			</a>
-			</div>
-			</div>
-			<div class="movie-content">
-			<div class="movie-content-header">
-			<a href="#">
-			<h3 class="movie-title">1917</h3>
-			</a>
-			<div class="imax-logo"></div>
-			</div>
-			<div class="movie-info">
-			<div class="info-section">
-			<label>Release date:</label>
-			<span>10 January 2020</span>
-			</div>
-			<div class="info-section">
-			<label>Location:</label>
-			<span>Glasgow - IMAX at GSC/ Glasgow - Renfrew Street</span>
-			</div>
-			</div>
-			</div>
-			</div>
-
-			<div class="movie-card">
-				<div class="movie-header parasite">
-					<div class="header-icon-container">
-						<a href="#">
-						<i class="material-icons header-icon">keyboard_arrow_down</i>
-						</a>
-					</div>
-				</div>
-				<div class="movie-content">
-					<div class="movie-content-header">
-						<a href="#">
-						<h3 class="movie-title">Parasite (Korean)</h3>
-						</a>
-						<div class="twoD-logo"></div>
-					</div>
-					<div class="movie-info">
-						<div class="info-section">
-							<label>Release date:</label>
-							<span>07 February 2020</span>
-						</div>
-						<div class="info-section">
-							<label>Location:</label>
-							<span>Glasgow - Renfrew Street</span>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="movie-card">
-			<div class="movie-header harleyQuinnBirdsOfPrey">
-			<div class="header-icon-container">
-			<a href="#">
-			<i class="material-icons header-icon">keyboard_arrow_down</i>
-			</a>
-			</div>
-			</div>
-			<div class="movie-content">
-			<div class="movie-content-header">
-			<a href="#">
-			<h3 class="movie-title">Birds Of Prey</h3>
-			</a>
-			<div class="twoD-logo"></div>
-			</div>
-			<div class="movie-info">
-			<div class="info-section">
-			<label>Release date:</label>
-			<span>07 February 2020</span>
-			</div>
-			<div class="info-section">
-			<label>Location:</label>
-			<span>Glasgow - IMAX at GSC/ Glasgow - Renfrew Street</span>
-			</div>
-			</div>
-			</div>
-			</div>
-
-			<div class="movie-card">
-			<div class="movie-header doLittle">
-			<div class="header-icon-container">
-			<a href="#">
-			<i class="material-icons header-icon">keyboard_arrow_down</i>
-			</a>
-			</div>
-			</div>
-			<div class="movie-content">
-			<div class="movie-content-header">
-			<a href="#">
-			<h3 class="movie-title">Dolittle</h3>
-			</a>
-			<div class="twoD-logo"></div>
-			</div>
-			<div class="movie-info">
-			<div class="info-section">
-			<label>Release date:</label>
-			<span>07 February 2020</span>
-			</div>
-			<div class="info-section">
-			<label>Location:</label>
-			<span>Glasgow - IMAX at GSC/ Glasgow - Renfrew Street</span>
-			</div>
-			</div>
-			</div>
-			</div>
-
-			<div class="movie-card">
-			<div class="movie-header darkWaters">
-			<div class="header-icon-container">
-			<a href="#">
-			<i class="material-icons header-icon">keyboard_arrow_down</i>
-			</a>
-			</div>
-			</div>
-			<div class="movie-content">
-			<div class="movie-content-header">
-			<a href="#">
-			<h3 class="movie-title">Dark Waters</h3>
-			</a>
-			<div class="twoD-logo"></div>
-			</div>
-			<div class="movie-info">
-			<div class="info-section">
-			<label>Release date:</label>
-			<span>28 February 2020</span>
-			</div>
-			<div class="info-section">
-			<label>Location:</label>
-			<span>Glasgow - IMAX at GSC/ Glasgow - Renfrew Street</span>
-			</div>
-			</div>
-			</div>
-			</div>
-
-
-			<div class="movie-card">
-			<div class="movie-header theInvisibleMan">
-			<div class="header-icon-container">
-			<a href="#">
-			<i class="material-icons header-icon">keyboard_arrow_down</i>
-			</a>
-			</div>
-			</div>
-			<div class="movie-content">
-			<div class="movie-content-header">
-			<a href="#">
-			<h3 class="movie-title">The Invisible Man</h3>
-			</a>
-			<div class="imax-logo"></div>
-			</div>
-			<div class="movie-info">
-			<div class="info-section">
-			<label>Release date:</label>
-			<span>28 February 2020</span>
-			</div>
-			<div class="info-section">
-			<label>Location:</label>
-			<span>Glasgow - IMAX at GSC/ Glasgow - Renfrew Street</span>
-			</div>
-			</div>
-			</div>
-			</div>
-
-			<div class="movie-card">
-			<div class="movie-header fantasyIsland">
-			<div class="header-icon-container">
-			<a href="#">
-			<i class="material-icons header-icon">keyboard_arrow_down</i>
-			</a>
-			</div>
-			</div>
-			<div class="movie-content">
-			<div class="movie-content-header">
-			<a href="#">
-			<h3 class="movie-title">Fantasy Island</h3>
-			</a>
-			<div class="twoD-logo"></div>
-			</div>
-			<div class="movie-info">
-			<div class="info-section">
-			<label>Release date:</label>
-			<span>06 March 2020</span>
-			</div>
-			<div class="info-section">
-			<label>Location:</label>
-			<span>Glasgow - IMAX at GSC/ Glasgow - Renfrew Street</span>
-			</div>
-			</div>
-			</div>
-			</div>
-
-			<div class="movie-card">
-			<div class="movie-header onWard">
-			<div class="header-icon-container">
-			<a href="#">
-			<i class="material-icons header-icon">keyboard_arrow_down</i>
-			</a>
-			</div>
-			</div>
-			<div class="movie-content">
-			<div class="movie-content-header">
-			<a href="#">
-			<h3 class="movie-title">Onward</h3>
-			</a>
-			<div class="imax-logo"></div>
-			<div class="fourDx-logo"></div>
-			</div>
-			<div class="movie-info">
-			<div class="info-section">
-			<label>Release date:</label>
-			<span>06 March 2020</span>
-			</div>
-			<div class="info-section">
-			<label>Location:</label>
-			<span>Glasgow - IMAX at GSC/ Glasgow - Renfrew Street</span>
-			</div>
-			</div>
-			</div>
-			</div>
-
-			<div class="movie-card">
-			<div class="movie-header quietPlace2">
-			<div class="header-icon-container">
-			<a href="#">
-			<i class="material-icons header-icon">keyboard_arrow_down</i>
-			</a>
-			</div>
-			</div>
-			<div class="movie-content">
-			<div class="movie-content-header">
-			<a href="#">
-			<h3 class="movie-title">A Quiet Place Part II</h3>
-			</a>
-			<div class="imax-logo"></div>
-			<div class="fourDx-logo"></div>
-			</div>
-			<div class="movie-info">
-			<div class="info-section">
-			<label>Release date:</label>
-			<span>19 March 2020</span>
-			</div>
-			<div class="info-section">
-			<label>Location:</label>
-			<span>Glasgow - IMAX at GSC/ Glasgow - Renfrew Street</span>
-			</div>
-			</div>
-			</div>
-			</div>
-
-			<div class="movie-card">
-				<div class="movie-header mulan">
-					<div class="header-icon-container">
-						<a href="#">
-						<i class="material-icons header-icon">keyboard_arrow_down</i>
-						</a>
-					</div>
-				</div>
-				<div class="movie-content">
-					<div class="movie-content-header">
-						<a href="#">
-						<h3 class="movie-title">Mulan</h3>
-						</a>
-						<div class="imax-logo"></div>
-					</div>
-					<div class="movie-info">
-						<div class="info-section">
-							<label>Release date:</label>
-							<span>27 March 2020</span>
-						</div>
-						<div class="info-section">
-							<label>Location:</label>
-							<span>Glasgow - IMAX at GSC/ Glasgow - Renfrew Street</span>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="movie-card">
-			<div class="movie-header blackWidow">
-			<div class="header-icon-container">
-			<a href="#">
-			<i class="material-icons header-icon">keyboard_arrow_down</i>
-			</a>
-			</div>
-			</div>
-			<div class="movie-content">
-			<div class="movie-content-header">
-			<a href="#">
-			<h3 class="movie-title">Black Widow</h3>
-			</a>
-			<div class="imax-logo"></div>
-			</div>
-			<div class="movie-info">
-			<div class="info-section">
-			<label>Release date:</label>
-			<span>01 May 2020</span>
-			</div>
-			<div class="info-section">
-			<label>Location:</label>
-			<span>Glasgow - IMAX at GSC/ Glasgow - Renfrew Street</span>
-			</div>
-			</div>
-			</div>
-			</div>
-
-			<div class="movie-card">
-				<div class="movie-header fastFurious9">
-					<div class="header-icon-container">
-						<a href="#">
-						<i class="material-icons header-icon">keyboard_arrow_down</i>
-						</a>
-					</div>
-				</div>
-				<div class="movie-content">
-					<div class="movie-content-header">
-						<a href="#">
-						<h3 class="movie-title">Fast & Furious 9</h3>
-						</a>
-						<div class="imax-logo"></div>
-					</div>
-					<div class="movie-info">
-						<div class="info-section">
-							<label>Release date:</label>
-							<span>22 May 2020</span>
-						</div>
-						<div class="info-section">
-							<label>Location:</label>
-							<span>Glasgow - IMAX at GSC/ Glasgow - Renfrew Street</span>
-						</div>
-					</div>
-				</div>
-			</div>
-
-	</div>
+<title>
+{% block title_block %}
+    Homepage
 {% endblock %}
+</title>
+
+
+{% block body_block %}
+<div class="jumbotron p-4">
+    <div class="container">
+        <h1 class="jumbotron-heading">icine says...</h1>
+        <div>
+            <h2 class="h2">
+            {% if user.is_authenticated %} 
+                howdy {{ user.username }}!
+            {% else %}
+                hey there partner!
+            {% endif %}
+        </h2>
+    <strong>{{ boldmessage }}</strong><br />
+        </div>
+    </div>
+</div>
+
+
+<div class="container"> 
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card mb-6">
+                <div class="card-body">
+                    <h2>Most Liked Categories</h2>
+                    <p class="card-text"></p>
+                    {% if categories %}
+                    <ul class="list-group">
+                    {% for category in categories %}
+                        <li class="list-group-item">
+                     <!-- The following line is changed to add an HTML hyperlink -->
+                        <a href="{% url 'icine:show_category' category.slug %}">
+                        {{ category.name }}</a>
+                        </li>
+                    {% endfor %}
+                    </ul>
+                    {% else %}
+                    <strong>There are no categories present.</strong>
+                    {% endif %}
+                    </p> 
+                </div>
+            </div> 
+        </div>
+
+
+        <div class="col-md-6"> 
+            <div class="card mb-6">
+                <div class="card-body">
+                    <h2>Most Viewed Pages</h2>
+                    <p class="card-text">
+                    {% if pages %}
+                    <ul class="list-group">
+                    {% for page in pages %}
+                        <li class="list-group-item">
+                             <a href="{{ page.url }}"\>{{ page.title }}</a>
+                        </li>
+                    {% endfor %}
+                    </ul>
+                    {% else %}
+                    <strong>There are no pages present.</strong>
+                    {% endif %}
+                    </p>    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    
+{% endblock %}
+
