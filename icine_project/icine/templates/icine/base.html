@@ -1,0 +1,120 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+	<!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="{% static 'icine/style.css' %}">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+	<link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+
+	{% if title%}
+		<title>iCine - {{ title }}</title>
+	{% else %}
+		<title>iCine</title>
+	{% endif %}
+
+</head>
+
+<body>
+<!-- <div class="window-margin"> -->
+<div class="window">
+
+	<aside class="sidebar">			
+		<div class="top-bar">
+			<a href="#">
+				<p class="logo"><i class="fa fa-star-o"></i> iCine </p>
+			</a>
+		</div>
+
+
+		<div class="search-box">
+			<input type="text" placeholder="Search..." />
+			<p class="fa fa-search"></p>
+		</div>
+
+		<menu class="menu">
+			<p class="menu-name">Movie Categories</p>
+			<ul>
+				<li class="active">
+					<a href="#">Action / Adventure</a>
+					<ul>
+						<li><a href="#">Latest</a></li>
+						<li class="active"><a href="#">Popular</a></li>
+						<li><a href="#">Coming soon</a></li>
+						<!-- <li><a href="#">Staff picks</a></li> -->
+					</ul>
+				</li>
+
+				<li><a href="#">Animation</a></li>
+				<li><a href="#">Comedy</a></li>
+				<li><a href="#">Documentaries</a></li>
+				<li><a href="#">Drama</a></li>
+				<li><a href="#">Horror</a></li>
+				<li><a href="#">Sci-Fi / Fantasy</a></li>
+				<li><a href="#">List A-Z</a></li>
+			</ul>
+
+				<div class="separator"></div>
+				<ul class="no-bullets">
+					<li><a href="#">In Theaters</a></li>
+					<li><a href="#">Top Rated Movies</a></li>
+					<li><a href="#">Most Popular Movies</a></li>
+					<li><a href="#">Top Box Office (UK)</a></li>
+				</ul>
+				<div class="separator"></div>
+		</menu>
+	</aside>
+
+	<div class="main" role="main">
+		<div class="top-bar">
+			<div class="profile-box">
+				<div class="circle"></div>
+				<span class="arrow fa fa-angle-down"></span>
+			</div>
+
+
+			<ul class="top-menu">
+				<li class="trigger-sidebar-toggle">
+					<a href="#"><i class="fa fa-bars"></i></a>
+				</li>
+
+				<li><a href="#">Home</a></li>
+				<li><a href="/icine/about.html">About</a></li>
+				<li><a href="#">Ranking List</a></li>
+				<li><a href="#">Cinecism</a></li>
+				<!-- <li><a href="#">Music</a></li>
+				<li><a href="#">Celebrities</a></li> -->
+			</ul>
+		</div>
+	</div>
+	{% block content %}{% endblock %}
+</div>
+<!-- </div>  -->
+<script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+<script type="text/javascript" src="{% static 'icine/md.js' %}"></script>
+
+<script id="rendered-js">
+jQuery(document).ready(function ($) {
+
+	$('a').on('click', function (e) {
+	e.preventDefault();
+	});
+
+	$('.trigger-sidebar-toggle').on('click', function () {
+	$('body').toggleClass('sidebar-is-open');
+	});
+
+});
+//# sourceURL=pen.js
+    </script>
+</body>
+</html>
