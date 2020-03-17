@@ -1,0 +1,45 @@
+{% extends "icine/base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+	<div class="main" role="main">
+        <div class="login-body">
+            <div class="movie-card">
+                <div class="movie-header log"></div>
+                <div class="movie-content">
+                    <form method="Post">
+                            {% csrf_token %}
+                            <div class="form-group">
+                                <h3>Log In</h3>
+                                <legend class="mb-2"></legend>
+                                {{ form|crispy }}
+                            </div>
+                            <div >
+                                <button class="btn btn-outline-info" type="submit">Log In</button>
+                            </div>
+                        </form>
+                    <div class="movie-info">
+                        <div class="boder-top pt-3">
+                                <small class="text-muted">
+                                    Need An Account? <a class="ml-2" href="{% url 'register' %}">Sign Up Now</a>
+                                </small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <div class="movie-header G"></div>
+                <div class="movie-content">
+                    <h3>Google Account</h3>
+                    <legend class="mb-2"></legend>
+                    <p class='text-muted'> You can login with a Google account.
+                        <ul class="list-group">
+                        <button class="btn btn-outline-info" type="submit"><i class="fa fa-google-plus"></i> Google</button>
+                        </ul>
+                    </p>
+                </div>
+                
+            </div>
+        </div>
+	</div>
+{% endblock %}

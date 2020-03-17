@@ -1,0 +1,37 @@
+{% extends "icine/base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+<div class="main" role="main">
+	<div class="login-body">
+		<div class="movie-card">
+			<div class="movie-header out"></div>
+			<div class="movie-content">
+				<h4>You hav been logged out!</h4>
+				<small class='text-muted'>
+                    <p>See you agagin...</p>
+				</small>
+			</div>	
+		</div>
+
+		<div class="movie-card">
+            <div class="movie-header type"></div>
+			<div class="movie-content">
+				<div class="movie-info">
+					<div class="boder-top pt-3">
+                        <h4>Write the comments on your favirate moives.</h4>
+						<!-- <small class="text-muted">
+                            <a class="ml-2" href="{% url 'login' %}">Log In Again</a> 
+                        </small> -->
+                        <button class="btn btn-outline-info"><a href="{% url 'login' %}">Log In Again</a></button>
+
+					</div>
+				</div>
+			</div>
+			
+		</div>
+
+		
+	</div>
+</div>
+
+{% endblock %}

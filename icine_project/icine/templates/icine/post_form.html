@@ -1,0 +1,52 @@
+{% extends "icine/base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+<div class="main" role="main">
+	<div class="row">
+		<div class="col-md-8">
+			<article class="media content-section">
+				<div class="media-body">
+					<form method="Post">
+						{% csrf_token %}
+						<div class="form-group">
+							<h3>Blog Post</h3>
+							<!-- <img src="https://images.unsplash.com/photo-1489533119213-66a5cd877091?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1651&q=80" alt=""> -->
+							<!-- <legend class="boder-bottom mb-4"></legend> -->
+							{{ form|crispy }}
+						</div>
+						<div >
+							<button class="btn btn-outline-info" type="submit">Post</button>
+						</div>
+					</form>
+				</div>
+			</article>
+		</div>
+		
+		<div class="col-md-4">
+			<div class="movie-card">
+				<div class="movie-header eye"></div>
+				<div class="movie-content">
+				<h3>Blog</h3>
+				<p class='text-muted'> See the latest blog articles.
+					<ul class="list-group">
+					<button class="btn btn-outline-info mb-3"><a href="{% url 'icine:postCreate' %}"><i class="fa fa-plus-square"></i> New Post</a></button>
+					<button class="btn btn-outline-info mb-3"><a href="{% url 'icine:blog' %}"><i class="fa fa-file-text"></i>Latest Post</a></button>
+					</ul>
+				</p>
+				</div>	
+			</div>
+		</div>
+		<!-- </div> -->
+
+		<!-- <div class="movie-card"> -->
+		
+			<!-- <div class="movie-header eye"></div> -->
+		
+
+		<!-- </div> -->
+
+		
+	</div>
+</div>
+
+{% endblock %}
